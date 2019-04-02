@@ -1,6 +1,3 @@
-Group Project - README Template
-===
-
 # Learn RPG
 
 ## Table of Contents
