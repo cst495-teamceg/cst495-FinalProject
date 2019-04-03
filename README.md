@@ -65,7 +65,7 @@ Gamify learning like Khan Academy. Reward user with xp per article they've read.
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+[sketch](https://i.imgur.com/V6HdTBw.jpg)
 
 ### [BONUS] Digital Wireframes & Mockups
 
