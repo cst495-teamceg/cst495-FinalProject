@@ -73,7 +73,6 @@ Gamify learning like Khan Academy. Reward user with xp per article they've read.
 
 
 ## Schema 
-[This section will be completed in Unit 9]
 ### Models
 #### Articles
    | Property      | Type     | Description |
