@@ -75,8 +75,73 @@ Gamify learning like Khan Academy. Reward user with xp per article they've read.
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+#### Articles
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | articleId      | String   | unique id for the article (default field) |
+   | authorId      | String   |  id of user who submited the article |
+   | articleText      | String   | text of article |
+   | createdAt      | dateTime   | timestamp of when article added |
+   | updatedAt      | dateTime   | timestamp of when article last updated |
+   | articleTags      | list   | tags/category of article |
+#### Ratings
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | ratingId      | String   | unique id for the rating (default field) |
+   | articleId      | String   | id for the article  |
+   | userId      | String   | id for the user  |
+   | rating      | Number   | rating for article  | 
+#### Users
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | userId      | String   | unique id for the user (default field) |
+   | joinedAt      | dateTime   | timestamp of when user created |
+   | level      | number   | level of user |
+   | xp      | number   | experience points of user |
+   | items      | list   | items owned by user |
+   | articlesRead      | list   | articles read by user (list of ids) |
+   | userImage      | Image   | image of user |
+#### Items
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | itemId      | String   | unique id for the item (default field) |   
+   | itemDescription      | String   | description of item |
+   | itemFeature      | String   | description of feature |
+   | itemImage      | Image   | image of item |
+   
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+   - Login Screen
+      - (GET) Check if credentials are correct
+         ```swift
+            ...
+         ```
+   - Register Screen
+      - (GET/POST) Create new user if not already exist
+         ```swift
+            ...
+         ```
+   - Articles View Screen
+      - (GET) List all articles
+         ```swift
+            ...
+         ```
+   - Current Article Screen
+      - (GET) Display selected article content
+         ```swift
+            ...
+         ```
+   -  Article Read
+      - (PUT) Add article to users list of articles read and reward xp
+         ```swift
+            ...
+         ```
+   -  Article Created
+      - (POST) Add article to submitted articles queue
+         ```swift
+            ...
+         ```
+   -  Rate Article
+      - (PUT) Add rating of article
+         ```swift
+            ...
+         ```
