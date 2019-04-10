@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		067B6EFF225E9C8A007ECA18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067B6EFE225E9C8A007ECA18 /* AppDelegate.swift */; };
+		067B6F01225E9C8A007ECA18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067B6F00225E9C8A007ECA18 /* ViewController.swift */; };
+		067B6F04225E9C8A007ECA18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 067B6F02225E9C8A007ECA18 /* Main.storyboard */; };
+		067B6F06225E9C8B007ECA18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 067B6F05225E9C8B007ECA18 /* Assets.xcassets */; };
+		067B6F09225E9C8B007ECA18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 067B6F07225E9C8B007ECA18 /* LaunchScreen.storyboard */; };
+		067B6F14225E9C8B007ECA18 /* LearnRPGTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067B6F13225E9C8B007ECA18 /* LearnRPGTests.swift */; };
+		067B6F1F225E9C8B007ECA18 /* LearnRPGUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067B6F1E225E9C8B007ECA18 /* LearnRPGUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		067B6F10225E9C8B007ECA18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 067B6EF3225E9C8A007ECA18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 067B6EFA225E9C8A007ECA18;
+			remoteInfo = LearnRPG;
+		};
+		067B6F1B225E9C8B007ECA18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 067B6EF3225E9C8A007ECA18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 067B6EFA225E9C8A007ECA18;
+			remoteInfo = LearnRPG;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		067B6EFB225E9C8A007ECA18 /* LearnRPG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnRPG.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		067B6EFE225E9C8A007ECA18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		067B6F00225E9C8A007ECA18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		067B6F03225E9C8A007ECA18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		067B6F05225E9C8B007ECA18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		067B6F08225E9C8B007ECA18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		067B6F0A225E9C8B007ECA18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		067B6F0F225E9C8B007ECA18 /* LearnRPGTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnRPGTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		067B6F13225E9C8B007ECA18 /* LearnRPGTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnRPGTests.swift; sourceTree = "<group>"; };
+		067B6F15225E9C8B007ECA18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		067B6F1A225E9C8B007ECA18 /* LearnRPGUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnRPGUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		067B6F1E225E9C8B007ECA18 /* LearnRPGUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnRPGUITests.swift; sourceTree = "<group>"; };
+		067B6F20225E9C8B007ECA18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		067B6EF8225E9C8A007ECA18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		067B6F0C225E9C8B007ECA18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		067B6F17225E9C8B007ECA18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		067B6EF2225E9C8A007ECA18 = {
+			isa = PBXGroup;
+			children = (
+				067B6EFD225E9C8A007ECA18 /* LearnRPG */,
+				067B6F12225E9C8B007ECA18 /* LearnRPGTests */,
+				067B6F1D225E9C8B007ECA18 /* LearnRPGUITests */,
+				067B6EFC225E9C8A007ECA18 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		067B6EFC225E9C8A007ECA18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				067B6EFB225E9C8A007ECA18 /* LearnRPG.app */,
+				067B6F0F225E9C8B007ECA18 /* LearnRPGTests.xctest */,
+				067B6F1A225E9C8B007ECA18 /* LearnRPGUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		067B6EFD225E9C8A007ECA18 /* LearnRPG */ = {
+			isa = PBXGroup;
+			children = (
+				067B6EFE225E9C8A007ECA18 /* AppDelegate.swift */,
+				067B6F00225E9C8A007ECA18 /* ViewController.swift */,
+				067B6F02225E9C8A007ECA18 /* Main.storyboard */,
+				067B6F05225E9C8B007ECA18 /* Assets.xcassets */,
+				067B6F07225E9C8B007ECA18 /* LaunchScreen.storyboard */,
+				067B6F0A225E9C8B007ECA18 /* Info.plist */,
+			);
+			path = LearnRPG;
+			sourceTree = "<group>";
+		};
+		067B6F12225E9C8B007ECA18 /* LearnRPGTests */ = {
+			isa = PBXGroup;
+			children = (
+				067B6F13225E9C8B007ECA18 /* LearnRPGTests.swift */,
+				067B6F15225E9C8B007ECA18 /* Info.plist */,
+			);
+			path = LearnRPGTests;
+			sourceTree = "<group>";
+		};
+		067B6F1D225E9C8B007ECA18 /* LearnRPGUITests */ = {
+			isa = PBXGroup;
+			children = (
+				067B6F1E225E9C8B007ECA18 /* LearnRPGUITests.swift */,
+				067B6F20225E9C8B007ECA18 /* Info.plist */,
+			);
+			path = LearnRPGUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		067B6EFA225E9C8A007ECA18 /* LearnRPG */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 067B6F23225E9C8B007ECA18 /* Build configuration list for PBXNativeTarget "LearnRPG" */;
+			buildPhases = (
+				067B6EF7225E9C8A007ECA18 /* Sources */,
+				067B6EF8225E9C8A007ECA18 /* Frameworks */,
+				067B6EF9225E9C8A007ECA18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LearnRPG;
+			productName = LearnRPG;
+			productReference = 067B6EFB225E9C8A007ECA18 /* LearnRPG.app */;
+			productType = "com.apple.product-type.application";
+		};
+		067B6F0E225E9C8B007ECA18 /* LearnRPGTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 067B6F26225E9C8B007ECA18 /* Build configuration list for PBXNativeTarget "LearnRPGTests" */;
+			buildPhases = (
+				067B6F0B225E9C8B007ECA18 /* Sources */,
+				067B6F0C225E9C8B007ECA18 /* Frameworks */,
+				067B6F0D225E9C8B007ECA18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				067B6F11225E9C8B007ECA18 /* PBXTargetDependency */,
+			);
+			name = LearnRPGTests;
+			productName = LearnRPGTests;
+			productReference = 067B6F0F225E9C8B007ECA18 /* LearnRPGTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		067B6F19225E9C8B007ECA18 /* LearnRPGUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 067B6F29225E9C8B007ECA18 /* Build configuration list for PBXNativeTarget "LearnRPGUITests" */;
+			buildPhases = (
+				067B6F16225E9C8B007ECA18 /* Sources */,
+				067B6F17225E9C8B007ECA18 /* Frameworks */,
+				067B6F18225E9C8B007ECA18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				067B6F1C225E9C8B007ECA18 /* PBXTargetDependency */,
+			);
+			name = LearnRPGUITests;
+			productName = LearnRPGUITests;
+			productReference = 067B6F1A225E9C8B007ECA18 /* LearnRPGUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		067B6EF3225E9C8A007ECA18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = cst495;
+				TargetAttributes = {
+					067B6EFA225E9C8A007ECA18 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					067B6F0E225E9C8B007ECA18 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 067B6EFA225E9C8A007ECA18;
+					};
+					067B6F19225E9C8B007ECA18 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 067B6EFA225E9C8A007ECA18;
+					};
+				};
+			};
+			buildConfigurationList = 067B6EF6225E9C8A007ECA18 /* Build configuration list for PBXProject "LearnRPG" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 067B6EF2225E9C8A007ECA18;
+			productRefGroup = 067B6EFC225E9C8A007ECA18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				067B6EFA225E9C8A007ECA18 /* LearnRPG */,
+				067B6F0E225E9C8B007ECA18 /* LearnRPGTests */,
+				067B6F19225E9C8B007ECA18 /* LearnRPGUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		067B6EF9225E9C8A007ECA18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				067B6F09225E9C8B007ECA18 /* LaunchScreen.storyboard in Resources */,
+				067B6F06225E9C8B007ECA18 /* Assets.xcassets in Resources */,
+				067B6F04225E9C8A007ECA18 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		067B6F0D225E9C8B007ECA18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		067B6F18225E9C8B007ECA18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		067B6EF7225E9C8A007ECA18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				067B6F01225E9C8A007ECA18 /* ViewController.swift in Sources */,
+				067B6EFF225E9C8A007ECA18 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		067B6F0B225E9C8B007ECA18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				067B6F14225E9C8B007ECA18 /* LearnRPGTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		067B6F16225E9C8B007ECA18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				067B6F1F225E9C8B007ECA18 /* LearnRPGUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		067B6F11225E9C8B007ECA18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 067B6EFA225E9C8A007ECA18 /* LearnRPG */;
+			targetProxy = 067B6F10225E9C8B007ECA18 /* PBXContainerItemProxy */;
+		};
+		067B6F1C225E9C8B007ECA18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 067B6EFA225E9C8A007ECA18 /* LearnRPG */;
+			targetProxy = 067B6F1B225E9C8B007ECA18 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		067B6F02225E9C8A007ECA18 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				067B6F03225E9C8A007ECA18 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		067B6F07225E9C8B007ECA18 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				067B6F08225E9C8B007ECA18 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		067B6F21225E9C8B007ECA18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		067B6F22225E9C8B007ECA18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		067B6F24225E9C8B007ECA18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LearnRPG/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = final.cst495.LearnRPG;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		067B6F25225E9C8B007ECA18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LearnRPG/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = final.cst495.LearnRPG;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		067B6F27225E9C8B007ECA18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LearnRPGTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = final.cst495.LearnRPGTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LearnRPG.app/LearnRPG";
+			};
+			name = Debug;
+		};
+		067B6F28225E9C8B007ECA18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LearnRPGTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = final.cst495.LearnRPGTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LearnRPG.app/LearnRPG";
+			};
+			name = Release;
+		};
+		067B6F2A225E9C8B007ECA18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LearnRPGUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = final.cst495.LearnRPGUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LearnRPG;
+			};
+			name = Debug;
+		};
+		067B6F2B225E9C8B007ECA18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LearnRPGUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = final.cst495.LearnRPGUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LearnRPG;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		067B6EF6225E9C8A007ECA18 /* Build configuration list for PBXProject "LearnRPG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				067B6F21225E9C8B007ECA18 /* Debug */,
+				067B6F22225E9C8B007ECA18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		067B6F23225E9C8B007ECA18 /* Build configuration list for PBXNativeTarget "LearnRPG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				067B6F24225E9C8B007ECA18 /* Debug */,
+				067B6F25225E9C8B007ECA18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		067B6F26225E9C8B007ECA18 /* Build configuration list for PBXNativeTarget "LearnRPGTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				067B6F27225E9C8B007ECA18 /* Debug */,
+				067B6F28225E9C8B007ECA18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		067B6F29225E9C8B007ECA18 /* Build configuration list for PBXNativeTarget "LearnRPGUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				067B6F2A225E9C8B007ECA18 /* Debug */,
+				067B6F2B225E9C8B007ECA18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 067B6EF3225E9C8A007ECA18 /* Project object */;
+}
