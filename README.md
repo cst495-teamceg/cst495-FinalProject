@@ -7,6 +7,11 @@
 2. [Schema](#Schema)
 
 ## Overview
+
+### Sprint 1
+<img src="https://github.com/cst495-teamceg/cst495-FinalProject/blob/master/v1.gif" width=600>
+
+
 ### Description
 Gamify learning like Khan Academy. Reward user with xp per article they've read. 
 
@@ -25,15 +30,15 @@ Gamify learning like Khan Academy. Reward user with xp per article they've read.
 
 **Required Must-have Stories**
 
-* User is able to create an account
-* User is able to log in to their account to see their stats
-* Each user has a profile page where they can see their level, accomplishments, etc.
-* User is awarded xp points and other rewards when certain milestones are reached
+- [ ] User is able to create an account
+- [x] User is able to log in to their account to see their stats
+- [x] Each user has a profile page where they can see their level, accomplishments, etc.
+- [ ] User is awarded xp points and other rewards when certain milestones are reached
 
 **Optional Nice-to-have Stories**
 
-* User can select general topics they're intersted in
-* Specific user-curated articles and content 
+- [ ] User can select general topics they're intersted in
+- [ ] Specific user-curated articles and content 
 
 ### 2. Screen Archetypes
 
