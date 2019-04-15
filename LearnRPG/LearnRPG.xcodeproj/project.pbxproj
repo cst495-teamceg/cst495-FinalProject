@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		064F1FF42265065300494E28 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064F1FF32265065300494E28 /* LoginViewController.swift */; };
+		064F1FF62265068D00494E28 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064F1FF52265068D00494E28 /* ArticleViewController.swift */; };
+		064F1FF8226508F800494E28 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064F1FF7226508F800494E28 /* ProfileViewController.swift */; };
 		067B6EFF225E9C8A007ECA18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067B6EFE225E9C8A007ECA18 /* AppDelegate.swift */; };
-		067B6F01225E9C8A007ECA18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067B6F00225E9C8A007ECA18 /* ViewController.swift */; };
 		067B6F04225E9C8A007ECA18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 067B6F02225E9C8A007ECA18 /* Main.storyboard */; };
 		067B6F06225E9C8B007ECA18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 067B6F05225E9C8B007ECA18 /* Assets.xcassets */; };
 		067B6F09225E9C8B007ECA18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 067B6F07225E9C8B007ECA18 /* LaunchScreen.storyboard */; };
@@ -34,9 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		064F1FF32265065300494E28 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		064F1FF52265068D00494E28 /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
+		064F1FF7226508F800494E28 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		067B6EFB225E9C8A007ECA18 /* LearnRPG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnRPG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		067B6EFE225E9C8A007ECA18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		067B6F00225E9C8A007ECA18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		067B6F03225E9C8A007ECA18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		067B6F05225E9C8B007ECA18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		067B6F08225E9C8B007ECA18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -77,6 +81,7 @@
 		067B6EF2225E9C8A007ECA18 = {
 			isa = PBXGroup;
 			children = (
+				064F1FF7226508F800494E28 /* ProfileViewController.swift */,
 				067B6EFD225E9C8A007ECA18 /* LearnRPG */,
 				067B6F12225E9C8B007ECA18 /* LearnRPGTests */,
 				067B6F1D225E9C8B007ECA18 /* LearnRPGUITests */,
@@ -98,8 +103,9 @@
 			isa = PBXGroup;
 			children = (
 				067B6EFE225E9C8A007ECA18 /* AppDelegate.swift */,
-				067B6F00225E9C8A007ECA18 /* ViewController.swift */,
 				067B6F02225E9C8A007ECA18 /* Main.storyboard */,
+				064F1FF52265068D00494E28 /* ArticleViewController.swift */,
+				064F1FF32265065300494E28 /* LoginViewController.swift */,
 				067B6F05225E9C8B007ECA18 /* Assets.xcassets */,
 				067B6F07225E9C8B007ECA18 /* LaunchScreen.storyboard */,
 				067B6F0A225E9C8B007ECA18 /* Info.plist */,
@@ -256,7 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				067B6F01225E9C8A007ECA18 /* ViewController.swift in Sources */,
+				064F1FF42265065300494E28 /* LoginViewController.swift in Sources */,
+				064F1FF62265068D00494E28 /* ArticleViewController.swift in Sources */,
+				064F1FF8226508F800494E28 /* ProfileViewController.swift in Sources */,
 				067B6EFF225E9C8A007ECA18 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
