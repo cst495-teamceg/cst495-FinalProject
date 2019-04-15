@@ -9,7 +9,7 @@
 ## Overview
 
 ### Sprint 1
-<img src="https://github.com/cst495-teamceg/cst495-FinalProject/blob/master/v1.gif" width=600>
+<img src="https://github.com/cst495-teamceg/cst495-FinalProject/blob/master/v1.gif" width=200>
 
 
 ### Description
@@ -69,12 +69,12 @@ Gamify learning like Khan Academy. Reward user with xp per article they've read.
 * Home -> Profile
 
 ## Wireframes
-<img src="https://i.imgur.com/V6HdTBw.jpg" width=600>
+<img src="https://i.imgur.com/V6HdTBw.jpg" width=200>
 
 ### [BONUS] Digital Wireframes & Mockups
 
 ### [BONUS] Interactive Prototype
-<img src="https://i.imgur.com/J8pbLLz.gif" width=600>
+<img src="https://i.imgur.com/J8pbLLz.gif" width=200>
 
 
 ## Schema 
