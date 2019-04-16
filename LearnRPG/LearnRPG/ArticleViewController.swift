@@ -10,13 +10,69 @@ import UIKit
 
 class ArticleViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    @IBOutlet weak var articleContentTextView: UITextView!
+    
+    @IBOutlet weak var articleTitleContentTextView: UILabel!
+    
+    @IBOutlet weak var countDownTimerLabel: UILabel!
+    
+    @IBOutlet weak var timerView: UIView!
+   
+    var seconds = 60
+    var timer = Timer()
+    var proceed = false
+    
+    @IBAction func tapOnTimerAction(_ sender: Any) {
+        if (proceed){
+            self.dismiss(animated: true, completion: nil)
+        }
     }
     
 
+    
+    func getWordCount() -> (Int){
+        let words = articleContentTextView.text.components(separatedBy: .whitespacesAndNewlines)
+        _ = words.filter({ (word) -> Bool in
+            word != ""
+        })
+        print(words.count)
+        return words.count
+        //print(wordCount)
+    }
+    
+    func timeToReadInSeconds(words: Int) -> (Int){
+        return words / 5
+    }
+    
+    @objc func counter() {
+        seconds -= 1
+        countDownTimerLabel.text = String(seconds)
+        if (seconds == 0){
+            timer.invalidate()
+            timerZero()
+        }
+    }
+    
+    func timerZero() {
+        countDownTimerLabel.text = "Finish"
+        timerView.backgroundColor = .green
+        proceed = true
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let words = getWordCount()
+        seconds = timeToReadInSeconds(words: words)
+        self.countDownTimerLabel.text = String(seconds)
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ArticleViewController.counter), userInfo: nil, repeats: true)
+        // Do any additional setup after loading the view.
+    }
+    
+    //Makes sure scrollbar is scrolled to top by default
+    override func viewDidLayoutSubviews() {
+    self.articleContentTextView.setContentOffset(.zero, animated: false)
+    }
+    
     /*
     // MARK: - Navigation
 
