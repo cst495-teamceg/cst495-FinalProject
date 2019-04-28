@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06223B6D2275445B006F30A5 /* ArticlesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06223B6C2275445B006F30A5 /* ArticlesTableViewController.swift */; };
+		06223B6F227544F7006F30A5 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06223B6E227544F7006F30A5 /* ArticleTableViewCell.swift */; };
+		06223B7122755744006F30A5 /* RateArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06223B7022755744006F30A5 /* RateArticleViewController.swift */; };
+		06223B7322755C40006F30A5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06223B7222755C40006F30A5 /* RegisterViewController.swift */; };
+		06223B752275668F006F30A5 /* TestAPIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06223B742275668F006F30A5 /* TestAPIViewController.swift */; };
 		064F1FF42265065300494E28 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064F1FF32265065300494E28 /* LoginViewController.swift */; };
 		064F1FF62265068D00494E28 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064F1FF52265068D00494E28 /* ArticleViewController.swift */; };
 		064F1FF8226508F800494E28 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064F1FF7226508F800494E28 /* ProfileViewController.swift */; };
@@ -36,9 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06223B6C2275445B006F30A5 /* ArticlesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesTableViewController.swift; sourceTree = "<group>"; };
+		06223B6E227544F7006F30A5 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		06223B7022755744006F30A5 /* RateArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateArticleViewController.swift; sourceTree = "<group>"; };
+		06223B7222755C40006F30A5 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = ../RegisterViewController.swift; sourceTree = "<group>"; };
+		06223B742275668F006F30A5 /* TestAPIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAPIViewController.swift; sourceTree = "<group>"; };
 		064F1FF32265065300494E28 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		064F1FF52265068D00494E28 /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
-		064F1FF7226508F800494E28 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		064F1FF7226508F800494E28 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = ../ProfileViewController.swift; sourceTree = "<group>"; };
 		067B6EFB225E9C8A007ECA18 /* LearnRPG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnRPG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		067B6EFE225E9C8A007ECA18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		067B6F03225E9C8A007ECA18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -81,7 +91,6 @@
 		067B6EF2225E9C8A007ECA18 = {
 			isa = PBXGroup;
 			children = (
-				064F1FF7226508F800494E28 /* ProfileViewController.swift */,
 				067B6EFD225E9C8A007ECA18 /* LearnRPG */,
 				067B6F12225E9C8B007ECA18 /* LearnRPGTests */,
 				067B6F1D225E9C8B007ECA18 /* LearnRPGUITests */,
@@ -102,8 +111,14 @@
 		067B6EFD225E9C8A007ECA18 /* LearnRPG */ = {
 			isa = PBXGroup;
 			children = (
+				06223B7222755C40006F30A5 /* RegisterViewController.swift */,
+				064F1FF7226508F800494E28 /* ProfileViewController.swift */,
 				067B6EFE225E9C8A007ECA18 /* AppDelegate.swift */,
 				067B6F02225E9C8A007ECA18 /* Main.storyboard */,
+				06223B742275668F006F30A5 /* TestAPIViewController.swift */,
+				06223B7022755744006F30A5 /* RateArticleViewController.swift */,
+				06223B6E227544F7006F30A5 /* ArticleTableViewCell.swift */,
+				06223B6C2275445B006F30A5 /* ArticlesTableViewController.swift */,
 				064F1FF52265068D00494E28 /* ArticleViewController.swift */,
 				064F1FF32265065300494E28 /* LoginViewController.swift */,
 				067B6F05225E9C8B007ECA18 /* Assets.xcassets */,
@@ -262,9 +277,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06223B6D2275445B006F30A5 /* ArticlesTableViewController.swift in Sources */,
 				064F1FF42265065300494E28 /* LoginViewController.swift in Sources */,
 				064F1FF62265068D00494E28 /* ArticleViewController.swift in Sources */,
+				06223B752275668F006F30A5 /* TestAPIViewController.swift in Sources */,
+				06223B7322755C40006F30A5 /* RegisterViewController.swift in Sources */,
 				064F1FF8226508F800494E28 /* ProfileViewController.swift in Sources */,
+				06223B7122755744006F30A5 /* RateArticleViewController.swift in Sources */,
+				06223B6F227544F7006F30A5 /* ArticleTableViewCell.swift in Sources */,
 				067B6EFF225E9C8A007ECA18 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

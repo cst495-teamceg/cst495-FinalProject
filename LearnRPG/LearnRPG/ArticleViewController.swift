@@ -18,17 +18,18 @@ class ArticleViewController: UIViewController {
     
     @IBOutlet weak var timerView: UIView!
    
+    @IBAction func ProceedToRateGesture(_ sender: Any) {
+        if (proceed){
+            performSegue(withIdentifier: "RateArticle", sender: self)        }
+    }
+    @IBAction func ProceedButtonAction(_ sender: Any) {
+
+    }
     var seconds = 60
     var timer = Timer()
     var proceed = false
     
-    @IBAction func tapOnTimerAction(_ sender: Any) {
-        if (proceed){
-            self.dismiss(animated: true, completion: nil)
-        }
-    }
     
-
     
     func getWordCount() -> (Int){
         let words = articleContentTextView.text.components(separatedBy: .whitespacesAndNewlines)
