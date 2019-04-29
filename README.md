@@ -8,6 +8,9 @@
 
 ## Overview
 
+### Sprint 3
+<img src="https://github.com/cst495-teamceg/cst495-FinalProject/blob/master/v3.png" width=200>
+
 ### Sprint 2
 <img src="https://github.com/cst495-teamceg/cst495-FinalProject/blob/master/v2.png" width=200>
 
