@@ -17,19 +17,11 @@ class ArticleViewController: UIViewController {
     @IBOutlet weak var countDownTimerLabel: UILabel!
     
     @IBOutlet weak var timerView: UIView!
-   
-    @IBAction func ProceedToRateGesture(_ sender: Any) {
-        if (proceed){
-            performSegue(withIdentifier: "RateArticle", sender: self)        }
-    }
-    @IBAction func ProceedButtonAction(_ sender: Any) {
 
-    }
+    
     var seconds = 60
     var timer = Timer()
     var proceed = false
-    
-    
     
     func getWordCount() -> (Int){
         let words = articleContentTextView.text.components(separatedBy: .whitespacesAndNewlines)
@@ -71,9 +63,17 @@ class ArticleViewController: UIViewController {
     
     //Makes sure scrollbar is scrolled to top by default
     override func viewDidLayoutSubviews() {
-    self.articleContentTextView.setContentOffset(.zero, animated: false)
+            self.articleContentTextView.setContentOffset(.zero, animated: false)
     }
     
+    
+    @IBAction func proceedTapAction(_ sender: Any) {
+        print("tap")
+        if (proceed){
+            performSegue(withIdentifier: "RateArticle", sender: self)
+        }
+    }
+        
     /*
     // MARK: - Navigation
 
@@ -83,5 +83,4 @@ class ArticleViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
