@@ -10,7 +10,7 @@ import UIKit
 
 class ChooseCharacterViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
-    let characters = ["Elf","Fairy","Knight","Merchant","Orc","Warrior"]
+    let characters = ["Elf","Fairy","Lil' Knight","Merchant","Orc","Warrior"]
     let characterImages: [UIImage] = [
         UIImage(named: "elf1")!,
         UIImage(named: "fairy1")!,

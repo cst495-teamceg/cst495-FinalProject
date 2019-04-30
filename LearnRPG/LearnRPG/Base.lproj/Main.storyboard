@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qsR-kS-7no">
     <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -454,85 +454,37 @@ Good Job!
                                 <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ote-Ur-Aag">
-                                        <rect key="frame" x="8" y="8" width="304" height="71"/>
+                                        <rect key="frame" x="8" y="8" width="304" height="81.5"/>
                                         <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Level 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QcQ-KH-KGj">
-                                        <rect key="frame" x="40" y="87" width="240" height="26"/>
+                                        <rect key="frame" x="40" y="97.5" width="240" height="26"/>
                                         <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="1,000,000 XP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="et3-aR-oAT">
-                                        <rect key="frame" x="40" y="121" width="240" height="26"/>
+                                        <rect key="frame" x="40" y="131.5" width="240" height="26"/>
                                         <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" image="elf1" translatesAutoresizingMaskIntoConstraints="NO" id="AQa-Xl-wAE" userLabel="Character View">
-                                        <rect key="frame" x="100" y="207" width="120" height="120"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="120" id="UHz-Kw-TMs"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chest1" translatesAutoresizingMaskIntoConstraints="NO" id="f8I-YZ-U6o" userLabel="Item1">
-                                        <rect key="frame" x="50" y="207" width="42" height="40"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="RAb-hx-St0"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="legs1" translatesAutoresizingMaskIntoConstraints="NO" id="oA5-kj-khe" userLabel="Item2">
-                                        <rect key="frame" x="50" y="287" width="42" height="40"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="kLv-lH-CmY"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="daggers (1)" translatesAutoresizingMaskIntoConstraints="NO" id="766-Tf-RAj" userLabel="Item3">
-                                        <rect key="frame" x="228" y="207" width="42" height="40"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="wQo-cX-aN3"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="potions (1)" translatesAutoresizingMaskIntoConstraints="NO" id="Avq-OQ-KLS" userLabel="Item4">
-                                        <rect key="frame" x="228" y="287" width="42" height="40"/>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="VGW-D1-e9c"/>
-                                        </constraints>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" image="elf1" translatesAutoresizingMaskIntoConstraints="NO" id="AQa-Xl-wAE" userLabel="Character View">
+                                        <rect key="frame" x="100" y="186" width="120" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="ote-Ur-Aag" secondAttribute="trailing" constant="8" id="0OH-YH-eZk"/>
-                                    <constraint firstAttribute="trailing" secondItem="Avq-OQ-KLS" secondAttribute="trailing" constant="50" id="2OH-4x-CPw"/>
-                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="oA5-kj-khe" secondAttribute="bottom" constant="40" id="3Mt-vE-YRz"/>
-                                    <constraint firstItem="AQa-Xl-wAE" firstAttribute="leading" secondItem="feR-x2-hf3" secondAttribute="leading" constant="100" id="5WO-6g-Zdl"/>
-                                    <constraint firstItem="oA5-kj-khe" firstAttribute="top" secondItem="f8I-YZ-U6o" secondAttribute="bottom" constant="40" id="60A-ty-sww"/>
                                     <constraint firstItem="et3-aR-oAT" firstAttribute="leading" secondItem="feR-x2-hf3" secondAttribute="leading" constant="40" id="7Bk-DW-6VJ"/>
-                                    <constraint firstItem="AQa-Xl-wAE" firstAttribute="top" secondItem="et3-aR-oAT" secondAttribute="bottom" constant="60" id="AES-JB-aQz"/>
-                                    <constraint firstItem="AQa-Xl-wAE" firstAttribute="leading" secondItem="oA5-kj-khe" secondAttribute="trailing" constant="8" id="Aph-oI-HoC"/>
                                     <constraint firstAttribute="trailing" secondItem="QcQ-KH-KGj" secondAttribute="trailing" constant="40" id="Cno-ha-3pz"/>
-                                    <constraint firstItem="f8I-YZ-U6o" firstAttribute="top" secondItem="et3-aR-oAT" secondAttribute="bottom" constant="60" id="DI1-AJ-wR5"/>
                                     <constraint firstItem="et3-aR-oAT" firstAttribute="top" secondItem="QcQ-KH-KGj" secondAttribute="bottom" constant="8" id="EzI-X0-QaB"/>
-                                    <constraint firstItem="f8I-YZ-U6o" firstAttribute="leading" secondItem="feR-x2-hf3" secondAttribute="leading" constant="50" id="Fjf-zT-Xy9"/>
-                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Avq-OQ-KLS" secondAttribute="bottom" constant="40" id="L02-2u-eQ9"/>
-                                    <constraint firstAttribute="trailing" secondItem="AQa-Xl-wAE" secondAttribute="trailing" constant="100" id="ME8-dv-ARa"/>
                                     <constraint firstItem="QcQ-KH-KGj" firstAttribute="leading" secondItem="feR-x2-hf3" secondAttribute="leading" constant="40" id="UpW-7B-rh9"/>
-                                    <constraint firstItem="Avq-OQ-KLS" firstAttribute="leading" secondItem="AQa-Xl-wAE" secondAttribute="trailing" constant="8" id="VKa-Y4-ID7"/>
-                                    <constraint firstItem="766-Tf-RAj" firstAttribute="top" secondItem="et3-aR-oAT" secondAttribute="bottom" constant="60" id="YZi-rf-qZQ"/>
-                                    <constraint firstItem="oA5-kj-khe" firstAttribute="leading" secondItem="feR-x2-hf3" secondAttribute="leading" constant="50" id="ZHa-XC-C0a"/>
-                                    <constraint firstItem="Avq-OQ-KLS" firstAttribute="top" secondItem="766-Tf-RAj" secondAttribute="bottom" constant="40" id="bzh-hk-P5q"/>
                                     <constraint firstItem="ote-Ur-Aag" firstAttribute="leading" secondItem="feR-x2-hf3" secondAttribute="leading" constant="8" id="eNq-TM-V1v"/>
                                     <constraint firstAttribute="trailing" secondItem="et3-aR-oAT" secondAttribute="trailing" constant="40" id="gFV-DK-2Zz"/>
                                     <constraint firstItem="ote-Ur-Aag" firstAttribute="top" secondItem="feR-x2-hf3" secondAttribute="top" constant="8" id="jQQ-ex-9G6"/>
-                                    <constraint firstAttribute="trailing" secondItem="766-Tf-RAj" secondAttribute="trailing" constant="50" id="s7U-jG-MVX"/>
-                                    <constraint firstItem="AQa-Xl-wAE" firstAttribute="leading" secondItem="f8I-YZ-U6o" secondAttribute="trailing" constant="8" id="tSM-Ay-ANG"/>
-                                    <constraint firstItem="766-Tf-RAj" firstAttribute="leading" secondItem="AQa-Xl-wAE" secondAttribute="trailing" constant="8" id="udO-0Y-obd"/>
-                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="AQa-Xl-wAE" secondAttribute="bottom" constant="40" id="yJ6-km-GyV"/>
                                     <constraint firstItem="QcQ-KH-KGj" firstAttribute="top" secondItem="ote-Ur-Aag" secondAttribute="bottom" constant="8" id="zTP-CI-OVA"/>
                                 </constraints>
                             </view>
@@ -568,7 +520,7 @@ Good Job!
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ez8-5V-99Q">
-                        <rect key="frame" x="0.0" y="20" width="320" height="50"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.2303580049" green="0.23738891309999999" blue="0.092196579279999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
@@ -690,13 +642,9 @@ Good Job!
         <image name="LearnRPGIcon" width="1536" height="1536"/>
         <image name="b2" width="480" height="480"/>
         <image name="button_wood" width="404" height="181"/>
-        <image name="chest1" width="512" height="512"/>
-        <image name="daggers (1)" width="512" height="512"/>
         <image name="elf1" width="968" height="1051"/>
         <image name="icons8-noble-knight-50" width="25" height="25"/>
         <image name="icons8-parchment-50" width="25" height="25"/>
-        <image name="legs1" width="512" height="512"/>
         <image name="paper_bg" width="1920" height="1920"/>
-        <image name="potions (1)" width="512" height="512"/>
     </resources>
 </document>
