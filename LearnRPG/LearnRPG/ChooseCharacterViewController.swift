@@ -10,6 +10,14 @@ import UIKit
 
 class ChooseCharacterViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
+
+    
+    @IBAction func selectCharTapAction(_ sender: Any) {
+        func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+            print(indexPath.item)
+        }
+    }
+    
     let characters = ["Elf","Fairy","Lil' Knight","Merchant","Orc","Warrior"]
     let characterImages: [UIImage] = [
         UIImage(named: "elf1")!,
@@ -28,7 +36,20 @@ class ChooseCharacterViewController: UIViewController, UICollectionViewDelegate,
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CharacterCell", for: indexPath) as! CharacterCollectionViewCell
         cell.characterNameLabel.text = characters[indexPath.item]
         cell.characterImageView.image = characterImages[indexPath.item]
+        cell.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tap(_:))))
         return cell
+    }
+    
+    @objc func tap(_ sender: UITapGestureRecognizer) {//works!
+        
+        let location = sender.location(in: self.collectionView)
+        let indexPath = self.collectionView.indexPathForItem(at: location)
+        
+        if let index = indexPath {
+            print("Got clicked on index: \(index)!")
+            print(index.item)
+            GlobalVariables.sharedManager.setClassId(newClassId: index.item)
+        }
     }
     
 
@@ -37,6 +58,8 @@ class ChooseCharacterViewController: UIViewController, UICollectionViewDelegate,
         super.viewDidLoad()
         collectionView.dataSource = self
         collectionView.delegate = self
+        
+
         // Do any additional setup after loading the view.
     }
     
