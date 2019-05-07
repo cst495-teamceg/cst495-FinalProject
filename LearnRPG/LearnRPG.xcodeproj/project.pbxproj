@@ -14,6 +14,7 @@
 		06223B752275668F006F30A5 /* TestAPIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06223B742275668F006F30A5 /* TestAPIViewController.swift */; };
 		0634929F22764F9300BCA026 /* CharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0634929E22764F9200BCA026 /* CharacterCollectionViewCell.swift */; };
 		063492A12276524F00BCA026 /* ChooseCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063492A02276524F00BCA026 /* ChooseCharacterViewController.swift */; };
+		063492A32277B13B00BCA026 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063492A22277B13B00BCA026 /* GlobalVariables.swift */; };
 		064F1FF42265065300494E28 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064F1FF32265065300494E28 /* LoginViewController.swift */; };
 		064F1FF62265068D00494E28 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064F1FF52265068D00494E28 /* ArticleViewController.swift */; };
 		064F1FF8226508F800494E28 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064F1FF7226508F800494E28 /* ProfileViewController.swift */; };
@@ -23,6 +24,9 @@
 		067B6F09225E9C8B007ECA18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 067B6F07225E9C8B007ECA18 /* LaunchScreen.storyboard */; };
 		067B6F14225E9C8B007ECA18 /* LearnRPGTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067B6F13225E9C8B007ECA18 /* LearnRPGTests.swift */; };
 		067B6F1F225E9C8B007ECA18 /* LearnRPGUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067B6F1E225E9C8B007ECA18 /* LearnRPGUITests.swift */; };
+		7239A17C84669C0F30BCEF75 /* Pods_LearnRPG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09DAA47FC3BA9EE7E7D9876 /* Pods_LearnRPG.framework */; };
+		8D5C32CF9758815B21D0EC65 /* Pods_LearnRPGUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB83C104DDE143B9D321F1D3 /* Pods_LearnRPGUITests.framework */; };
+		AD7313F01323DA0DD72274C1 /* Pods_LearnRPGTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F440C4305081D21372CBFC34 /* Pods_LearnRPGTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,7 @@
 		06223B742275668F006F30A5 /* TestAPIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAPIViewController.swift; sourceTree = "<group>"; };
 		0634929E22764F9200BCA026 /* CharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCollectionViewCell.swift; sourceTree = "<group>"; };
 		063492A02276524F00BCA026 /* ChooseCharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCharacterViewController.swift; sourceTree = "<group>"; };
+		063492A22277B13B00BCA026 /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 		064F1FF32265065300494E28 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		064F1FF52265068D00494E28 /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 		064F1FF7226508F800494E28 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = ../ProfileViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +70,15 @@
 		067B6F1A225E9C8B007ECA18 /* LearnRPGUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnRPGUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		067B6F1E225E9C8B007ECA18 /* LearnRPGUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnRPGUITests.swift; sourceTree = "<group>"; };
 		067B6F20225E9C8B007ECA18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F62881443341A308CCA3F85 /* Pods-LearnRPG.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnRPG.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LearnRPG/Pods-LearnRPG.debug.xcconfig"; sourceTree = "<group>"; };
+		2344AD060EB2DD0B990DC686 /* Pods-LearnRPGUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnRPGUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LearnRPGUITests/Pods-LearnRPGUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4BF435CC22134BD0407F7619 /* Pods-LearnRPGTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnRPGTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LearnRPGTests/Pods-LearnRPGTests.release.xcconfig"; sourceTree = "<group>"; };
+		598BDFCA847C5E805DA87226 /* Pods-LearnRPGUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnRPGUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LearnRPGUITests/Pods-LearnRPGUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		752184D385513BEB8015C5CE /* Pods-LearnRPGTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnRPGTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LearnRPGTests/Pods-LearnRPGTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB83C104DDE143B9D321F1D3 /* Pods_LearnRPGUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearnRPGUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D09DAA47FC3BA9EE7E7D9876 /* Pods_LearnRPG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearnRPG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F440C4305081D21372CBFC34 /* Pods_LearnRPGTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearnRPGTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F70B3FDBC29F70F3E8097B08 /* Pods-LearnRPG.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnRPG.release.xcconfig"; path = "Pods/Target Support Files/Pods-LearnRPG/Pods-LearnRPG.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7239A17C84669C0F30BCEF75 /* Pods_LearnRPG.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD7313F01323DA0DD72274C1 /* Pods_LearnRPGTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D5C32CF9758815B21D0EC65 /* Pods_LearnRPGUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +116,8 @@
 				067B6F12225E9C8B007ECA18 /* LearnRPGTests */,
 				067B6F1D225E9C8B007ECA18 /* LearnRPGUITests */,
 				067B6EFC225E9C8A007ECA18 /* Products */,
+				54596C324189B20629788699 /* Pods */,
+				3C818C50F7939B35A4954DA3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,6 +139,7 @@
 				067B6EFE225E9C8A007ECA18 /* AppDelegate.swift */,
 				067B6F02225E9C8A007ECA18 /* Main.storyboard */,
 				063492A02276524F00BCA026 /* ChooseCharacterViewController.swift */,
+				063492A22277B13B00BCA026 /* GlobalVariables.swift */,
 				0634929E22764F9200BCA026 /* CharacterCollectionViewCell.swift */,
 				06223B742275668F006F30A5 /* TestAPIViewController.swift */,
 				06223B7022755744006F30A5 /* RateArticleViewController.swift */,
@@ -152,6 +172,29 @@
 			path = LearnRPGUITests;
 			sourceTree = "<group>";
 		};
+		3C818C50F7939B35A4954DA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D09DAA47FC3BA9EE7E7D9876 /* Pods_LearnRPG.framework */,
+				F440C4305081D21372CBFC34 /* Pods_LearnRPGTests.framework */,
+				CB83C104DDE143B9D321F1D3 /* Pods_LearnRPGUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		54596C324189B20629788699 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F62881443341A308CCA3F85 /* Pods-LearnRPG.debug.xcconfig */,
+				F70B3FDBC29F70F3E8097B08 /* Pods-LearnRPG.release.xcconfig */,
+				752184D385513BEB8015C5CE /* Pods-LearnRPGTests.debug.xcconfig */,
+				4BF435CC22134BD0407F7619 /* Pods-LearnRPGTests.release.xcconfig */,
+				598BDFCA847C5E805DA87226 /* Pods-LearnRPGUITests.debug.xcconfig */,
+				2344AD060EB2DD0B990DC686 /* Pods-LearnRPGUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,9 +202,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 067B6F23225E9C8B007ECA18 /* Build configuration list for PBXNativeTarget "LearnRPG" */;
 			buildPhases = (
+				5D041003C4888DB0B349E5F6 /* [CP] Check Pods Manifest.lock */,
 				067B6EF7225E9C8A007ECA18 /* Sources */,
 				067B6EF8225E9C8A007ECA18 /* Frameworks */,
 				067B6EF9225E9C8A007ECA18 /* Resources */,
+				DB2161825D9F37908B278200 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -176,6 +221,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 067B6F26225E9C8B007ECA18 /* Build configuration list for PBXNativeTarget "LearnRPGTests" */;
 			buildPhases = (
+				18D3CF3493DA65BB4ABE1BA7 /* [CP] Check Pods Manifest.lock */,
 				067B6F0B225E9C8B007ECA18 /* Sources */,
 				067B6F0C225E9C8B007ECA18 /* Frameworks */,
 				067B6F0D225E9C8B007ECA18 /* Resources */,
@@ -194,6 +240,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 067B6F29225E9C8B007ECA18 /* Build configuration list for PBXNativeTarget "LearnRPGUITests" */;
 			buildPhases = (
+				0237E9BA6DB252F509589332 /* [CP] Check Pods Manifest.lock */,
 				067B6F16225E9C8B007ECA18 /* Sources */,
 				067B6F17225E9C8B007ECA18 /* Frameworks */,
 				067B6F18225E9C8B007ECA18 /* Resources */,
@@ -278,6 +325,97 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0237E9BA6DB252F509589332 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LearnRPGUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		18D3CF3493DA65BB4ABE1BA7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LearnRPGTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D041003C4888DB0B349E5F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LearnRPG-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB2161825D9F37908B278200 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LearnRPG/Pods-LearnRPG-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LearnRPG/Pods-LearnRPG-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		067B6EF7225E9C8A007ECA18 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -289,6 +427,7 @@
 				064F1FF62265068D00494E28 /* ArticleViewController.swift in Sources */,
 				06223B752275668F006F30A5 /* TestAPIViewController.swift in Sources */,
 				06223B7322755C40006F30A5 /* RegisterViewController.swift in Sources */,
+				063492A32277B13B00BCA026 /* GlobalVariables.swift in Sources */,
 				064F1FF8226508F800494E28 /* ProfileViewController.swift in Sources */,
 				063492A12276524F00BCA026 /* ChooseCharacterViewController.swift in Sources */,
 				06223B7122755744006F30A5 /* RateArticleViewController.swift in Sources */,
@@ -466,6 +605,7 @@
 		};
 		067B6F24225E9C8B007ECA18 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F62881443341A308CCA3F85 /* Pods-LearnRPG.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -483,6 +623,7 @@
 		};
 		067B6F25225E9C8B007ECA18 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F70B3FDBC29F70F3E8097B08 /* Pods-LearnRPG.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -500,6 +641,7 @@
 		};
 		067B6F27225E9C8B007ECA18 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 752184D385513BEB8015C5CE /* Pods-LearnRPGTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -520,6 +662,7 @@
 		};
 		067B6F28225E9C8B007ECA18 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BF435CC22134BD0407F7619 /* Pods-LearnRPGTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -540,6 +683,7 @@
 		};
 		067B6F2A225E9C8B007ECA18 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 598BDFCA847C5E805DA87226 /* Pods-LearnRPGUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -559,6 +703,7 @@
 		};
 		067B6F2B225E9C8B007ECA18 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2344AD060EB2DD0B990DC686 /* Pods-LearnRPGUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
