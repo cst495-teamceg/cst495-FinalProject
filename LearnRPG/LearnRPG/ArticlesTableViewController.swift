@@ -9,17 +9,22 @@
 import UIKit
 
 class ArticlesTableViewController: UITableViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
-    @IBAction func LogoutButtonAction(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ArticleCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ArticleTableViewCell") as! ArticleTableViewCell
+        let article = GlobalVariables.sharedManager.articles[indexPath.row]
+        let title = article.title
+        let content = article.content
+        
+        cell.articleTitleLabel!.text = title
+        cell.articleContentLabel!.text = content
+        
+        
         return cell
     }
     

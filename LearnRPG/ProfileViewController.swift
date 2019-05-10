@@ -10,13 +10,27 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
+    @IBOutlet weak var usernameLabel: UILabel!
+    @IBOutlet weak var levelLabel: UILabel!
+    @IBOutlet weak var xpLabel: UILabel!
+    
     @IBAction func ProfileDismiss(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        //Set username
+        self.usernameLabel.text = GlobalVariables.sharedManager.getUsername()
+        
+        //Set level
+        let levelStr = String(GlobalVariables.sharedManager.getLevel())
+        self.levelLabel.text = levelStr
+        
+        //Set xp
+        let xpStr = String(GlobalVariables.sharedManager.getXp())
+        self.xpLabel.text = xpStr
         // Do any additional setup after loading the view.
     }
     

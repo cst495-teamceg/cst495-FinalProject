@@ -24,6 +24,9 @@
 		067B6F09225E9C8B007ECA18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 067B6F07225E9C8B007ECA18 /* LaunchScreen.storyboard */; };
 		067B6F14225E9C8B007ECA18 /* LearnRPGTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067B6F13225E9C8B007ECA18 /* LearnRPGTests.swift */; };
 		067B6F1F225E9C8B007ECA18 /* LearnRPGUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067B6F1E225E9C8B007ECA18 /* LearnRPGUITests.swift */; };
+		06DF7E282283F89100937EE7 /* RewardXPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DF7E272283F89100937EE7 /* RewardXPViewController.swift */; };
+		06DF7E2A2284032400937EE7 /* LevelUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DF7E292284032400937EE7 /* LevelUpViewController.swift */; };
+		06DF7E2C2284152000937EE7 /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DF7E2B2284152000937EE7 /* HomeTabBarViewController.swift */; };
 		7239A17C84669C0F30BCEF75 /* Pods_LearnRPG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09DAA47FC3BA9EE7E7D9876 /* Pods_LearnRPG.framework */; };
 		8D5C32CF9758815B21D0EC65 /* Pods_LearnRPGUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB83C104DDE143B9D321F1D3 /* Pods_LearnRPGUITests.framework */; };
 		AD7313F01323DA0DD72274C1 /* Pods_LearnRPGTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F440C4305081D21372CBFC34 /* Pods_LearnRPGTests.framework */; };
@@ -70,6 +73,9 @@
 		067B6F1A225E9C8B007ECA18 /* LearnRPGUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnRPGUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		067B6F1E225E9C8B007ECA18 /* LearnRPGUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnRPGUITests.swift; sourceTree = "<group>"; };
 		067B6F20225E9C8B007ECA18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06DF7E272283F89100937EE7 /* RewardXPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardXPViewController.swift; sourceTree = "<group>"; };
+		06DF7E292284032400937EE7 /* LevelUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelUpViewController.swift; sourceTree = "<group>"; };
+		06DF7E2B2284152000937EE7 /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
 		0F62881443341A308CCA3F85 /* Pods-LearnRPG.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnRPG.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LearnRPG/Pods-LearnRPG.debug.xcconfig"; sourceTree = "<group>"; };
 		2344AD060EB2DD0B990DC686 /* Pods-LearnRPGUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnRPGUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LearnRPGUITests/Pods-LearnRPGUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4BF435CC22134BD0407F7619 /* Pods-LearnRPGTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnRPGTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LearnRPGTests/Pods-LearnRPGTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -138,6 +144,9 @@
 				064F1FF7226508F800494E28 /* ProfileViewController.swift */,
 				067B6EFE225E9C8A007ECA18 /* AppDelegate.swift */,
 				067B6F02225E9C8A007ECA18 /* Main.storyboard */,
+				06DF7E2B2284152000937EE7 /* HomeTabBarViewController.swift */,
+				06DF7E292284032400937EE7 /* LevelUpViewController.swift */,
+				06DF7E272283F89100937EE7 /* RewardXPViewController.swift */,
 				063492A02276524F00BCA026 /* ChooseCharacterViewController.swift */,
 				063492A22277B13B00BCA026 /* GlobalVariables.swift */,
 				0634929E22764F9200BCA026 /* CharacterCollectionViewCell.swift */,
@@ -422,12 +431,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				0634929F22764F9300BCA026 /* CharacterCollectionViewCell.swift in Sources */,
+				06DF7E282283F89100937EE7 /* RewardXPViewController.swift in Sources */,
 				06223B6D2275445B006F30A5 /* ArticlesTableViewController.swift in Sources */,
 				064F1FF42265065300494E28 /* LoginViewController.swift in Sources */,
 				064F1FF62265068D00494E28 /* ArticleViewController.swift in Sources */,
 				06223B752275668F006F30A5 /* TestAPIViewController.swift in Sources */,
+				06DF7E2A2284032400937EE7 /* LevelUpViewController.swift in Sources */,
 				06223B7322755C40006F30A5 /* RegisterViewController.swift in Sources */,
 				063492A32277B13B00BCA026 /* GlobalVariables.swift in Sources */,
+				06DF7E2C2284152000937EE7 /* HomeTabBarViewController.swift in Sources */,
 				064F1FF8226508F800494E28 /* ProfileViewController.swift in Sources */,
 				063492A12276524F00BCA026 /* ChooseCharacterViewController.swift in Sources */,
 				06223B7122755744006F30A5 /* RateArticleViewController.swift in Sources */,

@@ -9,14 +9,19 @@
 import Foundation
 import Alamofire
 
+struct Article {
+    var title: String
+    var content: String
+}
+
 class GlobalVariables {
     //statics
     lazy var BASE_URL = "http://iphone.devsofthewest.com/"
     lazy var GET_ALL_USERS = BASE_URL + "user/getAll"
     lazy var AUTH_USER = BASE_URL + "user/authenticate"
-    lazy var LEVEL1_THRESHHOLD = 1
-    lazy var LEVEL2_THRESHHOLD = 2
-    lazy var LEVEL3_THRESHHOLD = 3
+    lazy var LEVEL1_THRESHHOLD = 20
+    lazy var LEVEL2_THRESHHOLD = 30
+    lazy var LEVEL3_THRESHHOLD = 40
     
     //members
     private var username: String
@@ -25,6 +30,7 @@ class GlobalVariables {
     private var level: Int
     private var classId: Int
     private var readArticles: [Int]
+    public var articles: [Article]
 
     //Default Constructor
     init(){
@@ -34,6 +40,8 @@ class GlobalVariables {
         self.level = 0
         self.classId = 0
         self.readArticles = []
+        self.articles = []
+        self.seedArticles()
     }
     
     //OverloadedConstructor
@@ -44,6 +52,8 @@ class GlobalVariables {
         self.level = 1
         self.classId = newClassId
         self.readArticles = []
+        self.articles = []
+        self.seedArticles()
     }
     
     //Getters and Setters
@@ -67,9 +77,6 @@ class GlobalVariables {
     }
     func addXp(addXp: Int) {
         self.xp += addXp
-        if (checkIfLeveledUp()){
-            levelUp()
-        }
     }
     func getLevel() -> Int {
         return level
@@ -94,7 +101,9 @@ class GlobalVariables {
     func levelUp(){
         //do something
         print("Leveled Up!!!")
+        self.addLevel();
     }
+    
     func checkIfLeveledUp() -> Bool {
         let curLevel: Int = self.level
         switch curLevel {
@@ -127,6 +136,10 @@ class GlobalVariables {
         }
     }
     
+    private func seedArticles() {
+        self.articles.append(Article(title: "Apollo 12", content:"Apollo 12 was the sixth manned flight in the United States Apollo program and the second to land on the Moon. It was launched on November 14, 1969, from the Kennedy Space Center, Florida, four months after Apollo 11. Commander Charles 'Pete' Conrad and Lunar Module Pilot Alan L. Bean performed just over one day and seven hours of lunar surface activity while Command Module Pilot Richard F. Gordon remained in lunar orbit. The landing site for the mission was located in the southeastern portion of the Ocean of Storms./n\nUnlike the first landing on Apollo 11, Conrad and Bean achieved a precise landing at their expected location, the site of the Surveyor 3 unmanned probe, which had landed on April 20, 1967. They carried the first color television camera to the lunar surface on an Apollo flight, but transmission was lost after Bean accidentally destroyed the camera by pointing it at the Sun. On one of two moonwalks, they visited the Surveyor and removed some parts for return to Earth. The mission ended on November 24 with a successful splashdown."))
+        self.articles.append(Article(title: "Ooooops", content:" dsdfsdfsdfs"))
+    }
     
 //    class User {
 //        var username: String
@@ -139,7 +152,6 @@ class GlobalVariables {
 //        
 //    }
 
-    
     
     // Here is how you would get to it without there being a global collision of variables.
     // , or in other words, it is a globally accessable parameter that is specific to the

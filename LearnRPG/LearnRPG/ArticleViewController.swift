@@ -21,7 +21,8 @@ class ArticleViewController: UIViewController {
     
     var seconds = 60
     var timer = Timer()
-    var proceed = false
+    var proceed = true//For testing
+//    var proceed = false //Use this
     
     func getWordCount() -> (Int){
         let words = articleContentTextView.text.components(separatedBy: .whitespacesAndNewlines)
@@ -48,7 +49,7 @@ class ArticleViewController: UIViewController {
     
     func timerZero() {
         countDownTimerLabel.text = "Finish"
-        timerView.backgroundColor = .green
+        timerView.backgroundColor = #colorLiteral(red: 0, green: 0.5628422499, blue: 0.3188166618, alpha: 1)
         proceed = true
     }
     
@@ -57,7 +58,13 @@ class ArticleViewController: UIViewController {
         let words = getWordCount()
         seconds = timeToReadInSeconds(words: words)
         self.countDownTimerLabel.text = String(seconds)
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ArticleViewController.counter), userInfo: nil, repeats: true)
+        
+        //pauses when scrolling
+//        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ArticleViewController.counter), userInfo: nil, repeats: true)
+        
+        //Solves pause on timer when scrolling bug
+        timer = Timer(timeInterval: 1, target: self, selector: #selector(ArticleViewController.counter), userInfo: nil, repeats: true)
+        RunLoop.main.add(timer, forMode: .common)
         // Do any additional setup after loading the view.
     }
     
@@ -70,7 +77,30 @@ class ArticleViewController: UIViewController {
     @IBAction func proceedTapAction(_ sender: Any) {
         print("tap")
         if (proceed){
-            performSegue(withIdentifier: "RateArticle", sender: self)
+//            performSegue(withIdentifier: "RewardXP", sender: self)
+            
+            GlobalVariables.sharedManager.addXp(addXp: 10)
+            if (GlobalVariables.sharedManager.checkIfLeveledUp()){
+                GlobalVariables.sharedManager.levelUp()
+                let alertController = UIAlertController(title: "Level Up!", message:
+                    "Congrats! You leveled up!", preferredStyle: .alert)
+                alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+                self.present(alertController, animated: true, completion: nil)
+//                self.performSegue(withIdentifier: "returnFromModal2", sender: self)
+            } else {
+//                performSegue(withIdentifier: "LevelUpSegue", sender: self)
+//                //self.dismiss(animated: true, completion: {});
+//                self.navigationController?.popViewController(animated: true);
+                let alertController = UIAlertController(title: "Article Complete!", message:
+                    "You gained 10 XP!", preferredStyle: .alert)
+                alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+                
+                self.present(alertController, animated: true, completion: nil)
+                
+            }
+            
+            
+            
         }
     }
         
