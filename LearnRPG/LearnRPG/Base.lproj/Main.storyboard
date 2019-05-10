@@ -310,11 +310,9 @@ Unlike the first landing on Apollo 11, Conrad and Bean achieved a precise landin
                         <outlet property="articleTitleContentTextView" destination="BAV-ky-OZk" id="3qM-Xv-Hka"/>
                         <outlet property="countDownTimerLabel" destination="jbu-m5-qoH" id="3rb-0s-WuB"/>
                         <outlet property="timerView" destination="1XY-br-JRk" id="uJS-M4-7cC"/>
-                        <segue destination="fhi-Yk-TWl" kind="unwind" identifier="returnFromModal3" unwindAction="backFromModal:" id="So8-rj-zve"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1xY-Ls-M7G" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="fhi-Yk-TWl" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer id="uU1-x0-ixS">
                     <connections>
                         <action selector="proceedTapAction:" destination="hFF-h0-QzH" id="7Uh-Bo-xTc"/>

@@ -33,8 +33,13 @@ class ProfileViewController: UIViewController {
         let xpStr = String(GlobalVariables.sharedManager.getXp())
         self.xpLabel.text = xpStr
         // Do any additional setup after loading the view.
+        view.setNeedsDisplay()
     }
-
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.levelLabel.text = String(GlobalVariables.sharedManager.getLevel())
+        self.xpLabel.text = String(GlobalVariables.sharedManager.getXp())
+    }
 
     /*
     // MARK: - Navigation
