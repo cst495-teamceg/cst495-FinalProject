@@ -24,6 +24,7 @@
 		067B6F09225E9C8B007ECA18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 067B6F07225E9C8B007ECA18 /* LaunchScreen.storyboard */; };
 		067B6F14225E9C8B007ECA18 /* LearnRPGTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067B6F13225E9C8B007ECA18 /* LearnRPGTests.swift */; };
 		067B6F1F225E9C8B007ECA18 /* LearnRPGUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067B6F1E225E9C8B007ECA18 /* LearnRPGUITests.swift */; };
+		0684E89E22858DD50003E330 /* ArticleNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0684E89D22858DD50003E330 /* ArticleNavViewController.swift */; };
 		06DF7E282283F89100937EE7 /* RewardXPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DF7E272283F89100937EE7 /* RewardXPViewController.swift */; };
 		06DF7E2A2284032400937EE7 /* LevelUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DF7E292284032400937EE7 /* LevelUpViewController.swift */; };
 		06DF7E2C2284152000937EE7 /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DF7E2B2284152000937EE7 /* HomeTabBarViewController.swift */; };
@@ -73,6 +74,7 @@
 		067B6F1A225E9C8B007ECA18 /* LearnRPGUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnRPGUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		067B6F1E225E9C8B007ECA18 /* LearnRPGUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnRPGUITests.swift; sourceTree = "<group>"; };
 		067B6F20225E9C8B007ECA18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0684E89D22858DD50003E330 /* ArticleNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleNavViewController.swift; sourceTree = "<group>"; };
 		06DF7E272283F89100937EE7 /* RewardXPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardXPViewController.swift; sourceTree = "<group>"; };
 		06DF7E292284032400937EE7 /* LevelUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelUpViewController.swift; sourceTree = "<group>"; };
 		06DF7E2B2284152000937EE7 /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				064F1FF7226508F800494E28 /* ProfileViewController.swift */,
 				067B6EFE225E9C8A007ECA18 /* AppDelegate.swift */,
 				067B6F02225E9C8A007ECA18 /* Main.storyboard */,
+				0684E89D22858DD50003E330 /* ArticleNavViewController.swift */,
 				06DF7E2B2284152000937EE7 /* HomeTabBarViewController.swift */,
 				06DF7E292284032400937EE7 /* LevelUpViewController.swift */,
 				06DF7E272283F89100937EE7 /* RewardXPViewController.swift */,
@@ -431,6 +434,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0634929F22764F9300BCA026 /* CharacterCollectionViewCell.swift in Sources */,
+				0684E89E22858DD50003E330 /* ArticleNavViewController.swift in Sources */,
 				06DF7E282283F89100937EE7 /* RewardXPViewController.swift in Sources */,
 				06223B6D2275445B006F30A5 /* ArticlesTableViewController.swift in Sources */,
 				064F1FF42265065300494E28 /* LoginViewController.swift in Sources */,

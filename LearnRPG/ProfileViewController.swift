@@ -26,19 +26,19 @@ class ProfileViewController: UIViewController {
         self.usernameLabel.text = GlobalVariables.sharedManager.getUsername()
         
         //Set level
-        let levelStr = String(GlobalVariables.sharedManager.getLevel())
+        let levelStr = "Level " + String(GlobalVariables.sharedManager.getLevel());
         self.levelLabel.text = levelStr
         
         //Set xp
-        let xpStr = String(GlobalVariables.sharedManager.getXp())
+        let xpStr = String(GlobalVariables.sharedManager.getXp()) + " XP";
         self.xpLabel.text = xpStr
         // Do any additional setup after loading the view.
         view.setNeedsDisplay()
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        self.levelLabel.text = String(GlobalVariables.sharedManager.getLevel())
-        self.xpLabel.text = String(GlobalVariables.sharedManager.getXp())
+        self.levelLabel.text = "Level " + String(GlobalVariables.sharedManager.getLevel());
+        self.xpLabel.text = String(GlobalVariables.sharedManager.getXp()) + " XP";
     }
 
     /*

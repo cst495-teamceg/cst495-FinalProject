@@ -17,14 +17,17 @@ class ArticleViewController: UIViewController {
     @IBOutlet weak var countDownTimerLabel: UILabel!
     
     @IBOutlet weak var timerView: UIView!
-
+    @IBAction func backToArticles(_ sender: Any) {
+        performSegue(withIdentifier: "backToArticleView", sender: self)
+    }
+    
     var articleTitle: String!
     var articleContent: String!
     
     var seconds = 60
     var timer = Timer()
-    var proceed = true//For testing
-//    var proceed = false //Use this
+    //var proceed = true//For testing
+    var proceed = false //Use this
     
     func getWordCount() -> (Int){
         let words = articleContentTextView.text.components(separatedBy: .whitespacesAndNewlines)
@@ -37,7 +40,7 @@ class ArticleViewController: UIViewController {
     }
     
     func timeToReadInSeconds(words: Int) -> (Int){
-        return words / 6
+        return words / 8
     }
     
     @objc func counter() {
@@ -57,6 +60,7 @@ class ArticleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.hidesBackButton = false
         articleTitleContentTextView.text = articleTitle
         articleContentTextView.text = articleContent
         let words = getWordCount()
@@ -72,10 +76,10 @@ class ArticleViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    //Makes sure scrollbar is scrolled to top by default
-    override func viewDidLayoutSubviews() {
-            self.articleContentTextView.setContentOffset(.zero, animated: false)
-    }
+//    //Makes sure scrollbar is scrolled to top by default
+//    override func viewDidLayoutSubviews() {
+//            self.articleContentTextView.setContentOffset(.zero, animated: false)
+//    }
     
     
     @IBAction func proceedTapAction(_ sender: Any) {
@@ -104,12 +108,7 @@ class ArticleViewController: UIViewController {
                 alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
                 self.present(alertController, animated: true, completion: nil)
             }
-            self.dismiss(animated: false, completion: nil)
         }
-    }
-    
-    func popThisView() {
-        
     }
     /*
     // MARK: - Navigation
