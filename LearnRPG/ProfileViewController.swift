@@ -20,7 +20,8 @@ class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print("==========")
+        print(GlobalVariables.sharedManager.getUsername())
         //Set username
         self.usernameLabel.text = GlobalVariables.sharedManager.getUsername()
         
@@ -33,7 +34,7 @@ class ProfileViewController: UIViewController {
         self.xpLabel.text = xpStr
         // Do any additional setup after loading the view.
     }
-    
+
 
     /*
     // MARK: - Navigation

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oNI-Pa-qTx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -71,6 +71,9 @@
                                 <state key="normal" title="Login" backgroundImage="b2">
                                     <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mma-fQ-Cqn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ae1-Ax-fyR">
                                 <rect key="frame" x="162" y="308" width="150" height="120"/>
@@ -93,6 +96,11 @@
                         <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="passwordLoginField" destination="48e-04-oYf" id="uqp-Sc-7hc"/>
+                        <outlet property="usernameLoginField" destination="nr7-u6-WGa" id="ijW-2b-BkB"/>
+                        <segue destination="YqZ-N7-hZt" kind="show" identifier="loginSegue" id="fGA-Ip-4tT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -450,7 +458,7 @@ Good Job!
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FB8-4T-hCK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="668" y="1374"/>
+            <point key="canvasLocation" x="2393" y="819"/>
         </scene>
         <!--Character-->
         <scene sceneID="iUC-WD-hbZ">
@@ -459,7 +467,7 @@ Good Job!
                     <tabBarItem key="tabBarItem" title="Character" image="icons8-noble-knight-50" id="Iy3-Gj-YFv"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2Cv-JH-xKE">
-                        <rect key="frame" x="0.0" y="20" width="320" height="50"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
@@ -470,7 +478,7 @@ Good Job!
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5db-KH-6lS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="668" y="525"/>
+            <point key="canvasLocation" x="1367" y="474"/>
         </scene>
         <!--Choose Character View Controller-->
         <scene sceneID="s3B-T4-Hhc">
@@ -615,10 +623,29 @@ Good Job!
             </objects>
             <point key="canvasLocation" x="3526.875" y="-510"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="VDd-ZZ-Uv2">
+            <objects>
+                <navigationController id="YqZ-N7-hZt" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Qqf-RL-0Wh">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="oNI-Pa-qTx" kind="relationship" relationship="rootViewController" id="xg6-VV-KeA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ot8-2a-Ysb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="399" y="-510"/>
+        </scene>
+        <!--HomeView-->
         <scene sceneID="Bf4-sO-kFE">
             <objects>
-                <tabBarController id="oNI-Pa-qTx" sceneMemberID="viewController">
+                <tabBarController title="HomeView" id="oNI-Pa-qTx" customClass="HomeTabBarViewController" customModule="LearnRPG" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="xN6-32-tAW">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="MMU-Lk-jeP"/>
+                    </navigationItem>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sVE-p8-JpE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -631,7 +658,7 @@ Good Job!
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xye-SP-Whl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="704" y="-432"/>
+            <point key="canvasLocation" x="1367" y="-510"/>
         </scene>
         <!--Articles-->
         <scene sceneID="Atc-x5-nbS">
@@ -660,7 +687,4 @@ Good Job!
         <image name="icons8-parchment-50" width="25" height="25"/>
         <image name="paper_bg" width="1920" height="1920"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="Aut-fp-LMr"/>
-    </inferredMetricsTieBreakers>
 </document>

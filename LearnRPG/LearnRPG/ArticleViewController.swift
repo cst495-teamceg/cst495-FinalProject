@@ -101,18 +101,15 @@ class ArticleViewController: UIViewController {
                 let alertController = UIAlertController(title: "Article Complete!", message:
                     "You gained 10 XP!", preferredStyle: .alert)
                 //alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
-                alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler:{ (alertOKAction) in
-                    self.popThisView()
-                }))
+                alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
                 self.present(alertController, animated: true, completion: nil)
-                
             }
+            self.dismiss(animated: false, completion: nil)
         }
     }
     
     func popThisView() {
-        self.dismiss(animated: false, completion: nil)
-        self.navigationController!.popToRootViewController(animated: true)
+        
     }
     /*
     // MARK: - Navigation

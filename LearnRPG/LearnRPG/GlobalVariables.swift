@@ -18,6 +18,7 @@ class GlobalVariables {
     //statics
     lazy var BASE_URL = "http://iphone.devsofthewest.com/"
     lazy var GET_ALL_USERS = BASE_URL + "user/getAll"
+    lazy var GET_USER = BASE_URL + "user/get/"
     lazy var AUTH_USER = BASE_URL + "user/authenticate"
     lazy var LEVEL1_THRESHHOLD = 20
     lazy var LEVEL2_THRESHHOLD = 30
@@ -34,7 +35,7 @@ class GlobalVariables {
 
     //Default Constructor
     init(){
-        self.username = "null"
+        self.username = "test"
         self.passId = -1
         self.xp = 0
         self.level = 0
@@ -45,7 +46,7 @@ class GlobalVariables {
     }
     
     //OverloadedConstructor
-    init(newUsername: String, newPassId: Int, newClassId: Int){
+    func setUser(newUsername: String, newPassId: Int, newClassId: Int){
         self.username = newUsername
         self.passId = newPassId
         self.xp = 0
