@@ -97,6 +97,11 @@ class GlobalVariables {
         readArticles.append(articleNum)
     }
     
+
+    func deleteArticleByTitle(removeTitle: String) {
+        self.articles.removeAll { $0.title.contains(removeTitle) }
+    }
+    
     //Member functions
     func levelUp(){
         //do something
@@ -142,6 +147,7 @@ class GlobalVariables {
                 self.articles.append(Article(title: "Article 3", content:"Is"))
                 self.articles.append(Article(title: "Article 4", content:"Really"))
                 self.articles.append(Article(title: "Article 5", content:" Tough"))
+        
     }
     
 //    class User {

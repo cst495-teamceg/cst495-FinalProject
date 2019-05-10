@@ -15,6 +15,10 @@ class ArticlesTableViewController: UITableViewController {
 
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        tableView.reloadData()
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ArticleTableViewCell") as! ArticleTableViewCell
         let article = GlobalVariables.sharedManager.articles[indexPath.row]

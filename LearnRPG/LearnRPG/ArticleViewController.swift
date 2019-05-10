@@ -82,8 +82,11 @@ class ArticleViewController: UIViewController {
         print("tap")
         if (proceed){
 //            performSegue(withIdentifier: "RewardXP", sender: self)
-            
+            //add xp
             GlobalVariables.sharedManager.addXp(addXp: 10)
+            //remove read article
+            GlobalVariables.sharedManager.deleteArticleByTitle(removeTitle: articleTitle)
+            
             if (GlobalVariables.sharedManager.checkIfLeveledUp()){
                 GlobalVariables.sharedManager.levelUp()
                 let alertController = UIAlertController(title: "Level Up!", message:
@@ -97,17 +100,20 @@ class ArticleViewController: UIViewController {
 //                self.navigationController?.popViewController(animated: true);
                 let alertController = UIAlertController(title: "Article Complete!", message:
                     "You gained 10 XP!", preferredStyle: .alert)
-                alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
-                
+                //alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+                alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler:{ (alertOKAction) in
+                    self.popThisView()
+                }))
                 self.present(alertController, animated: true, completion: nil)
                 
             }
-            
-            
-            
         }
     }
-        
+    
+    func popThisView() {
+        self.dismiss(animated: false, completion: nil)
+        self.navigationController!.popToRootViewController(animated: true)
+    }
     /*
     // MARK: - Navigation
 
