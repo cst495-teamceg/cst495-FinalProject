@@ -18,6 +18,8 @@ class ArticleViewController: UIViewController {
     
     @IBOutlet weak var timerView: UIView!
 
+    var articleTitle: String!
+    var articleContent: String!
     
     var seconds = 60
     var timer = Timer()
@@ -35,7 +37,7 @@ class ArticleViewController: UIViewController {
     }
     
     func timeToReadInSeconds(words: Int) -> (Int){
-        return words / 5
+        return words / 6
     }
     
     @objc func counter() {
@@ -55,6 +57,8 @@ class ArticleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        articleTitleContentTextView.text = articleTitle
+        articleContentTextView.text = articleContent
         let words = getWordCount()
         seconds = timeToReadInSeconds(words: words)
         self.countDownTimerLabel.text = String(seconds)

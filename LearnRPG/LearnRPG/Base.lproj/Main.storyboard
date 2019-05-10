@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="P4E-i3-Ahr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oNI-Pa-qTx">
     <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -241,7 +241,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSd-Fo-RD9" userLabel="Article Text View">
-                                <rect key="frame" x="16" y="75.5" width="288" height="324.5"/>
+                                <rect key="frame" x="16" y="119.5" width="288" height="231.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" selected="YES"/>
@@ -253,13 +253,13 @@ Unlike the first landing on Apollo 11, Conrad and Bean achieved a precise landin
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apollo 12" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BAV-ky-OZk">
-                                <rect key="frame" x="8" y="28" width="304" height="39.5"/>
+                                <rect key="frame" x="8" y="72" width="304" height="39.5"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1XY-br-JRk" userLabel="Timer View">
-                                <rect key="frame" x="0.0" y="408" width="320" height="72"/>
+                                <rect key="frame" x="0.0" y="359" width="320" height="72"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="01:12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbu-m5-qoH">
                                         <rect key="frame" x="19" y="0.0" width="283" height="72"/>
@@ -299,7 +299,7 @@ Unlike the first landing on Apollo 11, Conrad and Bean achieved a precise landin
                     <navigationItem key="navigationItem" title="Article" id="aKE-fR-v9X"/>
                     <connections>
                         <outlet property="articleContentTextView" destination="QSd-Fo-RD9" id="9HE-eG-2Lc"/>
-                        <outlet property="articleTitleContentTextView" destination="BAV-ky-OZk" id="hNA-n6-GFW"/>
+                        <outlet property="articleTitleContentTextView" destination="BAV-ky-OZk" id="3qM-Xv-Hka"/>
                         <outlet property="countDownTimerLabel" destination="jbu-m5-qoH" id="3rb-0s-WuB"/>
                         <outlet property="timerView" destination="1XY-br-JRk" id="uJS-M4-7cC"/>
                         <segue destination="fhi-Yk-TWl" kind="unwind" identifier="returnFromModal3" unwindAction="backFromModal:" id="So8-rj-zve"/>
@@ -459,7 +459,7 @@ Good Job!
                     <tabBarItem key="tabBarItem" title="Character" image="icons8-noble-knight-50" id="Iy3-Gj-YFv"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2Cv-JH-xKE">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
@@ -565,49 +565,32 @@ Good Job!
             </objects>
             <point key="canvasLocation" x="-461.25" y="1373.75"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="zoo-kD-faV">
-            <objects>
-                <tabBarController id="keh-gU-i2s" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Tg9-BO-49X">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="SuP-3l-YID" kind="relationship" relationship="viewControllers" id="lba-tJ-LwB"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="03X-2w-3eU" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1854" y="228"/>
-        </scene>
         <!--Articles-->
         <scene sceneID="x8y-RY-VXH">
             <objects>
                 <tableViewController id="gG8-fb-aZc" customClass="ArticlesTableViewController" customModule="LearnRPG" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="134" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="KLg-FG-TGO">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="160" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="KLg-FG-TGO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArticleTableViewCell" rowHeight="120" id="7qI-Ey-GfK" customClass="ArticleTableViewCell" customModule="LearnRPG" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="320" height="120"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArticleTableViewCell" rowHeight="160" id="7qI-Ey-GfK" customClass="ArticleTableViewCell" customModule="LearnRPG" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="320" height="160"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7qI-Ey-GfK" id="P7M-jH-JHN">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="119.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="159.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Article Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="79j-1l-a62">
                                             <rect key="frame" x="16" y="11" width="288" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Article content" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ys1-ca-ljj">
-                                            <rect key="frame" x="16" y="40" width="288" height="69"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Article content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ys1-ca-ljj">
+                                            <rect key="frame" x="16" y="40" width="288" height="109"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -617,6 +600,7 @@ Good Job!
                                 <connections>
                                     <outlet property="articleContentLabel" destination="ys1-ca-ljj" id="aaT-LP-Iyw"/>
                                     <outlet property="articleTitleLabel" destination="79j-1l-a62" id="Vb0-QB-TV3"/>
+                                    <segue destination="hFF-h0-QzH" kind="show" id="UpS-3s-YBA"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -631,10 +615,29 @@ Good Job!
             </objects>
             <point key="canvasLocation" x="3526.875" y="-510"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="Bf4-sO-kFE">
+            <objects>
+                <tabBarController id="oNI-Pa-qTx" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sVE-p8-JpE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="SuP-3l-YID" kind="relationship" relationship="viewControllers" id="8fb-Ck-Tjd"/>
+                        <segue destination="P4E-i3-Ahr" kind="relationship" relationship="viewControllers" id="i7g-Vs-qw7"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xye-SP-Whl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="704" y="-432"/>
+        </scene>
+        <!--Articles-->
         <scene sceneID="Atc-x5-nbS">
             <objects>
                 <navigationController id="P4E-i3-Ahr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Articles" image="icons8-parchment-50" id="2Ct-Tn-4vQ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="U4j-FN-vBx">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -654,6 +657,7 @@ Good Job!
         <image name="button_wood" width="404" height="181"/>
         <image name="elf1" width="968" height="1051"/>
         <image name="icons8-noble-knight-50" width="25" height="25"/>
+        <image name="icons8-parchment-50" width="25" height="25"/>
         <image name="paper_bg" width="1920" height="1920"/>
     </resources>
     <inferredMetricsTieBreakers>

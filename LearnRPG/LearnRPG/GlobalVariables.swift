@@ -138,7 +138,10 @@ class GlobalVariables {
     
     private func seedArticles() {
         self.articles.append(Article(title: "Apollo 12", content:"Apollo 12 was the sixth manned flight in the United States Apollo program and the second to land on the Moon. It was launched on November 14, 1969, from the Kennedy Space Center, Florida, four months after Apollo 11. Commander Charles 'Pete' Conrad and Lunar Module Pilot Alan L. Bean performed just over one day and seven hours of lunar surface activity while Command Module Pilot Richard F. Gordon remained in lunar orbit. The landing site for the mission was located in the southeastern portion of the Ocean of Storms./n\nUnlike the first landing on Apollo 11, Conrad and Bean achieved a precise landing at their expected location, the site of the Surveyor 3 unmanned probe, which had landed on April 20, 1967. They carried the first color television camera to the lunar surface on an Apollo flight, but transmission was lost after Bean accidentally destroyed the camera by pointing it at the Sun. On one of two moonwalks, they visited the Surveyor and removed some parts for return to Earth. The mission ended on November 24 with a successful splashdown."))
-        self.articles.append(Article(title: "Ooooops", content:" dsdfsdfsdfs"))
+        self.articles.append(Article(title: "Article 2", content:" Mesquite mouse\n\nThe mesquite mouse (Peromyscus merriami) is a species of rodent in the family Cricetidae found in Mexico and in Arizona in the United States.[1]"))
+                self.articles.append(Article(title: "Article 3", content:"Is"))
+                self.articles.append(Article(title: "Article 4", content:"Really"))
+                self.articles.append(Article(title: "Article 5", content:" Tough"))
     }
     
 //    class User {

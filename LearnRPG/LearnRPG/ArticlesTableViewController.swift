@@ -33,7 +33,20 @@ class ArticlesTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return GlobalVariables.sharedManager.articles.count
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        let articleTitle =  GlobalVariables.sharedManager.articles[indexPath.row].title
+        let articleContent =  GlobalVariables.sharedManager.articles[indexPath.row].content
+        let articleViewController = segue.destination as! ArticleViewController
+        articleViewController.articleTitle = articleTitle
+        articleViewController.articleContent = articleContent
+        
+        
+        tableView.deselectRow(at: indexPath, animated: true)
     }
   
 }
