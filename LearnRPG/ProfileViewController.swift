@@ -10,16 +10,36 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
+    @IBOutlet weak var usernameLabel: UILabel!
+    @IBOutlet weak var levelLabel: UILabel!
+    @IBOutlet weak var xpLabel: UILabel!
+    
     @IBAction func ProfileDismiss(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print("==========")
+        print(GlobalVariables.sharedManager.getUsername())
+        //Set username
+        self.usernameLabel.text = GlobalVariables.sharedManager.getUsername()
+        
+        //Set level
+        let levelStr = "Level " + String(GlobalVariables.sharedManager.getLevel());
+        self.levelLabel.text = levelStr
+        
+        //Set xp
+        let xpStr = String(GlobalVariables.sharedManager.getXp()) + " XP";
+        self.xpLabel.text = xpStr
         // Do any additional setup after loading the view.
+        view.setNeedsDisplay()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        self.levelLabel.text = "Level " + String(GlobalVariables.sharedManager.getLevel());
+        self.xpLabel.text = String(GlobalVariables.sharedManager.getXp()) + " XP";
+    }
 
     /*
     // MARK: - Navigation

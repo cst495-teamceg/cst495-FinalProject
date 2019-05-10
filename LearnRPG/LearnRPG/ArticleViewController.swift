@@ -17,11 +17,17 @@ class ArticleViewController: UIViewController {
     @IBOutlet weak var countDownTimerLabel: UILabel!
     
     @IBOutlet weak var timerView: UIView!
-
+    @IBAction func backToArticles(_ sender: Any) {
+        performSegue(withIdentifier: "backToArticleView", sender: self)
+    }
+    
+    var articleTitle: String!
+    var articleContent: String!
     
     var seconds = 60
     var timer = Timer()
-    var proceed = false
+    //var proceed = true//For testing
+    var proceed = false //Use this
     
     func getWordCount() -> (Int){
         let words = articleContentTextView.text.components(separatedBy: .whitespacesAndNewlines)
@@ -34,7 +40,7 @@ class ArticleViewController: UIViewController {
     }
     
     func timeToReadInSeconds(words: Int) -> (Int){
-        return words / 5
+        return words / 8
     }
     
     @objc func counter() {
@@ -48,32 +54,62 @@ class ArticleViewController: UIViewController {
     
     func timerZero() {
         countDownTimerLabel.text = "Finish"
-        timerView.backgroundColor = .green
+        timerView.backgroundColor = #colorLiteral(red: 0, green: 0.5628422499, blue: 0.3188166618, alpha: 1)
         proceed = true
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.hidesBackButton = false
+        articleTitleContentTextView.text = articleTitle
+        articleContentTextView.text = articleContent
         let words = getWordCount()
         seconds = timeToReadInSeconds(words: words)
         self.countDownTimerLabel.text = String(seconds)
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ArticleViewController.counter), userInfo: nil, repeats: true)
+        
+        //pauses when scrolling
+//        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ArticleViewController.counter), userInfo: nil, repeats: true)
+        
+        //Solves pause on timer when scrolling bug
+        timer = Timer(timeInterval: 1, target: self, selector: #selector(ArticleViewController.counter), userInfo: nil, repeats: true)
+        RunLoop.main.add(timer, forMode: .common)
         // Do any additional setup after loading the view.
     }
     
-    //Makes sure scrollbar is scrolled to top by default
-    override func viewDidLayoutSubviews() {
-            self.articleContentTextView.setContentOffset(.zero, animated: false)
-    }
+//    //Makes sure scrollbar is scrolled to top by default
+//    override func viewDidLayoutSubviews() {
+//            self.articleContentTextView.setContentOffset(.zero, animated: false)
+//    }
     
     
     @IBAction func proceedTapAction(_ sender: Any) {
         print("tap")
         if (proceed){
-            performSegue(withIdentifier: "RateArticle", sender: self)
+//            performSegue(withIdentifier: "RewardXP", sender: self)
+            //add xp
+            GlobalVariables.sharedManager.addXp(addXp: 10)
+            //remove read article
+            GlobalVariables.sharedManager.deleteArticleByTitle(removeTitle: articleTitle)
+            
+            if (GlobalVariables.sharedManager.checkIfLeveledUp()){
+                GlobalVariables.sharedManager.levelUp()
+                let alertController = UIAlertController(title: "Level Up!", message:
+                    "Congrats! You leveled up!", preferredStyle: .alert)
+                alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+                self.present(alertController, animated: true, completion: nil)
+//                self.performSegue(withIdentifier: "returnFromModal2", sender: self)
+            } else {
+//                performSegue(withIdentifier: "LevelUpSegue", sender: self)
+//                //self.dismiss(animated: true, completion: {});
+//                self.navigationController?.popViewController(animated: true);
+                let alertController = UIAlertController(title: "Article Complete!", message:
+                    "You gained 10 XP!", preferredStyle: .alert)
+                //alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+                alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+                self.present(alertController, animated: true, completion: nil)
+            }
         }
     }
-        
     /*
     // MARK: - Navigation
 

@@ -9,17 +9,26 @@
 import UIKit
 
 class ArticlesTableViewController: UITableViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
-    @IBAction func LogoutButtonAction(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+    
+    override func viewDidAppear(_ animated: Bool) {
+        tableView.reloadData()
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ArticleCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ArticleTableViewCell") as! ArticleTableViewCell
+        let article = GlobalVariables.sharedManager.articles[indexPath.row]
+        let title = article.title
+        let content = article.content
+        
+        cell.articleTitleLabel!.text = title
+        cell.articleContentLabel!.text = content
+        
+        
         return cell
     }
     
@@ -28,7 +37,20 @@ class ArticlesTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return GlobalVariables.sharedManager.articles.count
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        let articleTitle =  GlobalVariables.sharedManager.articles[indexPath.row].title
+        let articleContent =  GlobalVariables.sharedManager.articles[indexPath.row].content
+        let articleViewController = segue.destination as! ArticleViewController
+        articleViewController.articleTitle = articleTitle
+        articleViewController.articleContent = articleContent
+        
+        
+        tableView.deselectRow(at: indexPath, animated: true)
     }
   
 }

@@ -17,7 +17,7 @@ class RegisterViewController: UIViewController {
     @IBAction func registerButtonAction(_ sender: Any) {
         var valid = false
         //1: check if input is correct length
-        if (usernameField.text!.count < 4 && passwordField.text!.count < 4 && confirmPasswordField.text!.count < 4){
+        if (usernameField.text!.count < 4 || passwordField.text!.count < 4 || confirmPasswordField.text!.count < 4){
             let alertController = UIAlertController(title: "Learn RPG", message:
                 "Input must be greater than 3 characters", preferredStyle: .alert)
             alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
@@ -34,7 +34,8 @@ class RegisterViewController: UIViewController {
             alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
             
             self.present(alertController, animated: true, completion: nil)
-        } else {
+        }
+        else {
             valid = true
         }
         

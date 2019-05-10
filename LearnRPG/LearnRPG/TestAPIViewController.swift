@@ -40,7 +40,6 @@ class TestAPIViewController: UIViewController {
         }
         print("RETURN VAL= " + val)
         return val
-        
     }
     
     func getUsers() {
